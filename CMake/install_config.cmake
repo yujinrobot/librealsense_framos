@@ -63,12 +63,12 @@ if(BUILD_FRAMOS_CODE)
         DESTINATION ${SOURCE_DEST}
     )
 
-    if (UNIX)
-        install(FILES
-            ${PROJECT_SOURCE_DIR}/config/99-realsense-libusb.rules 
-            DESTINATION /etc/udev/rules.d/
-        )
-    endif()
+    # if (UNIX)
+    #     install(FILES
+    #         ${PROJECT_SOURCE_DIR}/config/99-realsense-libusb.rules 
+    #         DESTINATION /etc/udev/rules.d/
+    #     )
+    # endif()
 endif()
 
 install(DIRECTORY ${PROJECT_SOURCE_DIR}/include/librealsense2

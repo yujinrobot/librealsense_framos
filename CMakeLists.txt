@@ -11,7 +11,6 @@ if(${FORCE_LIBUVC} OR ${FORCE_WINUSB_UVC} OR ${ANDROID_USB_HOST_UVC})
 endif()
 
 set( BUILD_FRAMOS_CODE ON )
-set( BUILD_EXAMPLES ON )
 
 # Checking Internet connection, as TM2 needs to download the FW from amazon cloud
 if(BUILD_WITH_TM2 AND NOT INTERNET_CONNECTION)
