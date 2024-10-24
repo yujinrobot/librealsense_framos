@@ -94,7 +94,8 @@ include(CMake/install_config.cmake)
 if(BUILD_FRAMOS_CODE)
     MESSAGE(STATUS "BUILD_FRAMOS_CODE work")
     #add_compile_definitons is not compatible with cmake version: 3.1.0
-    add_compile_definitions(FRAMOS)
+    #add_compile_definitions(FRAMOS)
+    add_definitions(-DLIBREALSENSE_RS2_TYPES_H)
     add_definitions(-DFRAMOS)
     #DISABLE_LIBUSB flag added for FRAMOS librealsense as a workaround for a rare seg fault issue
     if(FRAMOS_DISABLE_LIBUSB)
