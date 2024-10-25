@@ -6,7 +6,6 @@ Copyright(c) 2017 Intel Corporation. All Rights Reserved. */
 * Exposes sensor options functionality for C compilers
 */
 
-#define FRAMOS
 
 #ifndef LIBREALSENSE_RS2_OPTION_H
 #define LIBREALSENSE_RS2_OPTION_H
