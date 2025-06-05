@@ -25,7 +25,7 @@ install(TARGETS ${LRS_TARGET}
     PUBLIC_HEADER DESTINATION "${CMAKE_INSTALL_PREFIX}/include/librealsense2"
 )
 
-if(BUILD_FRAMOS_CODE)
+if(OFF)
     if (UNIX)
         set(SOURCE_DEST src/librealsense2)
     elseif (WIN32)
